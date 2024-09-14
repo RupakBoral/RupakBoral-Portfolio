@@ -1,0 +1,41 @@
+import NavItems from './NavItems';
+import { useState } from 'react';
+
+const Navbar = () => {
+
+  const navItems = [
+      {
+        label: 'Home',
+        link: '#home',
+      },
+      {
+        label: 'About',
+        link: '#about',
+      },
+      {
+        label: 'Work',
+        link: '#work',
+      }
+  ];
+  
+  const [activeItem, setActiveItem] = useState('#home'); 
+
+  return (
+      <nav className='md:flex hidden gap-10 bg-zinc-700 rounded-xl text-center'>
+          {
+              navItems.map(({label, link}, index) => (
+                <NavItems 
+                  label={label}
+                  link={link}
+                  key={index}
+                  activeItem={activeItem}      // Pass activeItem state
+                  setActiveItem={setActiveItem}  // Pass the state setter function
+                />
+              ))
+          }
+      </nav>
+  );
+}
+
+
+export default Navbar;

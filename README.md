@@ -1,4 +1,6 @@
-# This Portfolio has Modern Design and is Responsive for different devices. This includes:
+# Rupak Boral Portfolio Website
+
+This Portfolio has Modern Design and is Responsive for different devices. This includes:
 
 1. My Introduction
 2. My Interest
@@ -8,8 +10,8 @@
 
 Project can be accessed from url: https://rupakboral-portfolio.web.app/
 
-# This portfolio is created using React.
+This portfolio is created using React.
 
-# For design Framework: Tailwind Css.
+For design Framework: Tailwind Css.
 
-# Deployed using Firebase.
+Deployed using Firebase.

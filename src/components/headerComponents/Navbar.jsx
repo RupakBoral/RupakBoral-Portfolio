@@ -13,6 +13,10 @@ const Navbar = () => {
         link: '#about',
       },
       {
+        label: 'Skills',
+        link: '#skills',
+      },
+      {
         label: 'Work',
         link: '#work',
       }

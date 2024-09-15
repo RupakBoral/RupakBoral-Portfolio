@@ -5,9 +5,9 @@ import TailwindIcon from '../images/tailwindcss.png'
 import reduxIcon from '../images/redux.png'
 import figmaIcon from '../images/figma.png'
 import jsIcon from '../images/js.png'
-import cssIcon from '../images/css.webp'
+import cssIcon from '../images/css.png'
 import htmlIcon from '../images/html.png'
-import nodejsIcon from '../images/nodejs.png'
+import nodejsIcon from '../images/nodejs.jpeg'
 import CppIcon from '../images/cpp.png'
 
 const Skills = () => {
@@ -58,10 +58,10 @@ const Skills = () => {
             label: 'CPP',
             desc: 'Problem Solving'
         },
-      ];
+    ];
 
     return (
-        <div className='space-y-6'>
+        <div id='skills' className='space-y-6'>
             <h1 className='text-4xl font-semibold text-zinc-200'>Skills</h1>
             <p className='w-1/2 text-zinc-300'>Discover the powerful tools and technologies I use to create exceptional websites and applications.</p>
             <div className='grid md:grid-cols-3 gap-4 flex-wrap'>

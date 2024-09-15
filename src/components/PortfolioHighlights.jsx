@@ -7,44 +7,43 @@ import PastPlay from '../images/PastPlay.png'
 
 const PortfolioHighlights = () => {
 
+  const projects = [
+      {
+        imgSrc: NetflixGPT,
+        name: 'Netflix-GPT',
+        stacks: ['React', 'GPT API', 'TMDB API', 'Tailwind CSS', 'Redux', 'React-Router', 'Firebase'],
+        projectLink: 'netflixgpt-8068c.web.app'
+      },
+      {
+        imgSrc: FoodOrder,
+        name: 'Niwala',
+        stacks: ['React', 'Redux', 'API', 'Tailwind CSS'],
+        projectLink: 'https://github.com/RupakBoral/Niwala'
+      },
+      {
+        imgSrc: PastPlay,
+        name: 'Past Play',
+        stacks: ['Web-design', 'Development', 'React', 'Tailwind CSS'],
+        projectLink: ''
+      },
+      {
+          imgSrc: WeatherApp,
+          name: 'Weather App',
+          stacks: ['Development', 'API', 'HTML', 'Tailwind CSS', 'JS'],
+          projectLink: 'https://github.com/RupakBoral/Weather-App'
+      },
+    ];
 
-    const projects = [
-        {
-          imgSrc: NetflixGPT,
-          name: 'Netflix-GPT',
-          stacks: ['React', 'GPT API', 'TMDB API', 'Tailwind CSS', 'Redux', 'React-Router', 'Firebase'],
-          projectLink: 'https://musify-5al0.onrender.com/'
-        },
-        {
-          imgSrc: FoodOrder,
-          name: 'Niwala',
-          stacks: ['React', 'Redux', 'API', 'Tailwind CSS'],
-          projectLink: 'https://pixstock-official.vercel.app/'
-        },
-        {
-          imgSrc: PastPlay,
-          name: 'Past Play',
-          stacks: ['Web-design', 'Development', 'React', 'Tailwind CSS'],
-          projectLink: 'https://github.com/codewithsadee-org/wealthome'
-        },
-        {
-            imgSrc: WeatherApp,
-            name: 'Weather App',
-            stacks: ['Development', 'API', 'HTML', 'Tailwind CSS', 'JS'],
-            projectLink: ''
-        },
-      ];
-
-    return (
-        <div id='work' className='flex flex-col space-y-10'>
-            <p className='text-4xl font-semibold text-zinc-200'>My Portfolio Highlights</p>
-            <div className='grid md:grid-cols-2 md:gap-x-6 md:gap-y-10 gap-x-3 gap-y-5'>
-              {
-                projects.map((item, index) => <ProjectCard image={item.imgSrc} name={item.name} stacks={item.stacks} link={item.projectLink} key={index}/>)
-              }
-            </div>
-        </div>
-    );
+  return (
+      <div id='work' className='flex flex-col space-y-10'>
+          <p className='text-4xl font-semibold text-zinc-200'>My Portfolio Highlights</p>
+          <div className='grid md:grid-cols-2 md:gap-x-6 md:gap-y-10 gap-x-3 gap-y-5'>
+            {
+              projects.map((item, index) => <ProjectCard image={item.imgSrc} name={item.name} stacks={item.stacks} link={item.projectLink} key={index}/>)
+            }
+          </div>
+      </div>
+  );
 }
 
 export default PortfolioHighlights;

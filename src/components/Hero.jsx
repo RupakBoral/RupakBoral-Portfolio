@@ -1,17 +1,18 @@
 import React from 'react';
-import logo from '../images/logo.png'
+import dev from '../images/dev.jpg'
 import developer from '../images/developer.jpeg'
+
 
 const Hero = () => {
     return (
-        <div id='home' className='flex font-sans pt-[20%] -space-x-8 md:space-x-0 overflow-x-hidden transition-all duration-900'>
+        <div id='home' className='reveal-up flex font-sans pt-[20%] -space-x-8 md:space-x-0 overflow-x-hidden '>
             <div className='flex flex-col gap-8 justify-center'>
                 <div className='flex items-center gap-4'>
-                    <img width={50} height={50} src={logo} alt=''/>
+                    <img src={developer} className='w-12 h-12 rounded-full' alt=''/>
                     <p className='text-zinc-400 text-base'>Available for work</p>
                 </div>
                 <h1 className='text-5xl w-3/4 font-semibold text-zinc-100'>Building Scalable Modern Website for the Future</h1>
-                <div className='flex justify-between w-3/4'>
+                <div className='flex justify-between w-3/4 gap-4'>
                     <a href='/'>
                         <button className='flex gap-4 p-3 bg-sky-500 text-blue-950 rounded-xl font-medium text-sans'> 
                             <p>Download Resume</p>
@@ -26,7 +27,7 @@ const Hero = () => {
                     </a>
                 </div>
             </div>
-            <img className='md:w-96 md:h-96 w-60 h-60 hidden sm:inline rounded-3xl' src={developer} alt=''/>
+            <img className='md:w-96 md:h-96 w-60 h-60 hidden sm:inline rounded-full' src={dev} alt=''/>
         </div>
     );
 }

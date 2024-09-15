@@ -30,15 +30,15 @@ const ContactMe = () => {
     ];
 
     return (
-        <div id='contact' className='flex flex-col md:flex-row justify-between items-center text-zinc-300'>
+        <div id='contact' className='reveal-up flex flex-col gap-10 md:text-left text-center md:flex-row justify-between items-center text-zinc-300'>
         
             {/* Social Links */}
 
             <div className='flex flex-col gap-6'>
                 <h1 className='text-4xl text-zinc-100'>Contract me for collaboration</h1>
                 <p className='text-zinc-400'>Reach out today to discuss your project needs and starts collaborating on something amazing!</p>
-                <hr className='w-4/5 border-zinc-600'></hr>
-                <div className='flex justify-between w-1/2'>
+                <hr className='w-4/5 md:border-zinc-600 border-transparent'></hr>
+                <div className='flex justify-between md:mx-0 mx-auto md:w-1/2 gap-4'>
                     {
                         socialLinks.map((item, index) => 
                             <a href={item.link} key={index}>
@@ -52,7 +52,7 @@ const ContactMe = () => {
             {/* Message */}
 
             <div className='flex flex-col gap-6'>
-                <div className='flex gap-2'>
+                <div className='flex md:flex-row flex-col gap-2'>
                     <div className='space-y-4'>
                         <p>Name</p>
                         <input className='h-16 p-2 bg-neutral-700 text-zinc-200 rounded-lg' />

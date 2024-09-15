@@ -25,7 +25,7 @@ const Navbar = () => {
   const [activeItem, setActiveItem] = useState('#home'); 
 
   return (
-      <nav className='md:flex hidden gap-10 bg-zinc-700 rounded-xl text-center'>
+      <nav className='md:flex hidden gap-10 backdrop-blur-sm rounded-xl text-center p-1'>
           {
               navItems.map(({label, link}, index) => (
                 <NavItems 

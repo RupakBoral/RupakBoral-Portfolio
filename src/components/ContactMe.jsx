@@ -30,11 +30,11 @@ const ContactMe = () => {
     ];
 
     return (
-        <div id='contact' className='reveal-up flex flex-col gap-10 md:text-left text-center md:flex-row justify-between items-center text-zinc-300'>
+        <div className='flex flex-col gap-10 md:text-left text-center md:flex-row justify-between items-center text-zinc-300'>
         
             {/* Social Links */}
 
-            <div className='flex flex-col gap-6'>
+            <div className='reveal-up flex flex-col gap-6'>
                 <h1 className='text-4xl text-zinc-100'>Contract me for collaboration</h1>
                 <p className='text-zinc-400'>Reach out today to discuss your project needs and starts collaborating on something amazing!</p>
                 <hr className='w-4/5 md:border-zinc-600 border-transparent'></hr>
@@ -51,7 +51,7 @@ const ContactMe = () => {
 
             {/* Message */}
 
-            <div className='flex flex-col gap-6'>
+            <div className='reveal-down flex flex-col gap-6'>
                 <div className='flex md:flex-row flex-col gap-2'>
                     <div className='space-y-4'>
                         <p>Name</p>

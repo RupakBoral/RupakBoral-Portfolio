@@ -3,9 +3,9 @@ import ItemsList from './ItemsList';
 
 const ProjectCard = ({image, name, stacks, link }) => {
     return (
-        <div className='reveal-up flex flex-col gap-3 bg-zinc-800 rounded-2xl p-6 hover:shadow-pink-200 transition-all duration-900 hover:shadow-lg '>
-            <img className='rounded-2xl hover:scale-105 transition-all duration-1000' src={image} alt=''/>
-            <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-3 bg-zinc-800 rounded-2xl p-6 hover:shadow-pink-200 transition-all duration-900 hover:shadow-lg '>
+            <img className='reveal-down rounded-2xl hover:scale-105 transition-all duration-1000' src={image} alt=''/>
+            <div className='reveal-up flex flex-col gap-4'>
                 <div className='flex justify-between items-center'>
                     <h1>{name}</h1>
                     <a target='blank' href={link}>

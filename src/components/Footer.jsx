@@ -38,17 +38,17 @@ const Footer = () => {
     ];
 
     return (
-        <div className='reveal-up flex flex-col sm:flex-row justify-between mb-28'>
-            <div className='flex flex-col gap-8 w-1/2'>
+        <div className='flex flex-col sm:flex-row justify-between mb-28'>
+            <div className='reveal-down flex flex-col gap-8 w-1/2'>
                 <h1 className='text-zinc-100 text-4xl font-semibold'>Let's work together today!</h1>
                 <button className='p-3 bg-sky-600 font-semibold text-lg text-sky-950 w-2/5 rounded-xl box-content'>Start Project </button>
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='reveal-up flex flex-col gap-4'>
                 {
                     sitemap.map((item, index) => <FooterLinks label={item.label} href={item.href} key={index} />)
                 }
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='reveal-down flex flex-col gap-4'>
                 {
                     socials.map((item, index) => <FooterLinks label={item.label} href={item.href} key={index} />)
                 }

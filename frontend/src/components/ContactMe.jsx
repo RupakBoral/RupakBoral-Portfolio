@@ -13,14 +13,14 @@ const ContactMe = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!name || !fromEmail || !message || !phone) {
+    if (!name || !fromEmail || !message) {
       seterror("Please fill out all fields.");
       return;
     }
 
     try {
       const res = await axios.post(
-        process.env.REACT_APP_BASE_URL + "/send-email",
+        process.env.REACT_APP_DEPLOYED_URL + "/send-email",
         {
           name,
           fromEmail,

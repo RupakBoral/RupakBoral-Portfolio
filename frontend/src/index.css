@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    @apply bg-zinc-900 text-zinc-50 h-[200vh]
+}
+
+
+@layer components {
+    .rounded-xl-inset {
+      border-radius: 1rem; /* This is equivalent to rounded-xl */
+      /* Add custom inset shadow or other effects here */
+    }
+  }
+  
+
+.menu-btn {
+    @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform] active:scale-95;
+}
+
+.reveal-up {
+  @apply translate-y-20 opacity-0 backdrop-blur-sm
+}
+
+.reveal-down {
+  @apply -translate-y-20 opacity-0 backdrop-blur-sm
+}

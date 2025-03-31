@@ -19,9 +19,8 @@ const ContactMe = () => {
     }
 
     try {
-      console.log(process.env.DEPLOYED_URL);
       const res = await axios.post(
-        process.env.DEPLOYED_URL + "/send-email",
+        process.env.REACT_APP_DEPLOYED_URL + "/send-email",
         {
           name,
           fromEmail,

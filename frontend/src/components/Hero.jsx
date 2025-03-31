@@ -24,7 +24,7 @@ const Hero = () => {
         </h1>
         <div className="flex justify-between w-3/4 gap-4 reveal-down">
           <a
-            href="https://drive.google.com/file/d/1PeU-Lj5CN3ssRQ8sGihzXUwPqZaw7PNz/view?usp=sharing"
+            href="https://drive.google.com/file/d/18YR87dyRhXbotQdYn5qzDZk5dNGC576n/view?usp=sharing"
             target="blank"
           >
             <button className="flex gap-4 p-3 bg-sky-500 text-blue-950 rounded-xl font-medium text-sans">

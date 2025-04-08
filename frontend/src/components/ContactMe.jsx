@@ -35,7 +35,6 @@ const ContactMe = () => {
         setStatus();
       }, 5000);
     } catch (error) {
-      console.log(error);
       seterror("Message was not sent");
       setTimeout(() => {
         seterror();

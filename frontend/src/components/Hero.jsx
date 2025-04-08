@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="flex font-sans pt-[20%] -space-x-8 md:space-x-0 overflow-x-hidden "
+      className="flex font-sans pt-[45%] md:pt-[20%] lg:pt-[20%] -space-x-8 md:space-x-0 overflow-x-hidden "
     >
       <div className="flex flex-col gap-8 justify-center">
         <div className="flex items-center gap-4">

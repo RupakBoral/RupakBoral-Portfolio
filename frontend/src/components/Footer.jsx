@@ -46,9 +46,12 @@ const Footer = () => {
         <h1 className="text-zinc-100 text-4xl font-semibold">
           Let's work together today!
         </h1>
-        <button className="p-3 bg-sky-600 font-semibold text-lg text-sky-950 w-2/5 rounded-xl box-content">
+        <a
+          href="#contact"
+          className="p-3 bg-sky-600 font-semibold text-lg text-sky-950 w-2/5 rounded-xl box-content"
+        >
           Start Project{" "}
-        </button>
+        </a>
       </div>
       <div className="reveal-up flex flex-col gap-4">
         {sitemap.map((item, index) => (

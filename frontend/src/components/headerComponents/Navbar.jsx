@@ -1,45 +1,41 @@
-import NavItems from './NavItems';
-import { useState } from 'react';
+import NavItems from "./NavItems";
+import { useState } from "react";
 
 const Navbar = () => {
-
   const navItems = [
-      {
-        label: 'Home',
-        link: '#home',
-      },
-      {
-        label: 'About',
-        link: '#about',
-      },
-      {
-        label: 'Skills',
-        link: '#skills',
-      },
-      {
-        label: 'Work',
-        link: '#work',
-      }
+    {
+      label: "Home",
+      link: "#home",
+    },
+    {
+      label: "About",
+      link: "#about",
+    },
+    {
+      label: "Skills",
+      link: "#skills",
+    },
+    {
+      label: "Work",
+      link: "#work",
+    },
   ];
-  
-  const [activeItem, setActiveItem] = useState('#home'); 
+
+  const [activeItem, setActiveItem] = useState("#home");
 
   return (
-      <nav className='md:flex hidden gap-10 backdrop-blur-sm rounded-xl text-center p-1'>
-          {
-              navItems.map(({label, link}, index) => (
-                <NavItems 
-                  label={label}
-                  link={link}
-                  key={index}
-                  activeItem={activeItem}      // Pass activeItem state
-                  setActiveItem={setActiveItem}  // Pass the state setter function
-                />
-              ))
-          }
-      </nav>
+    <nav className="md:flex hidden gap-10 backdrop-blur-sm rounded-xl text-center p-1">
+      {navItems.map(({ label, link }, index) => (
+        <NavItems
+          label={label}
+          link={link}
+          key={index}
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+        />
+      ))}
+    </nav>
   );
-}
-
+};
 
 export default Navbar;

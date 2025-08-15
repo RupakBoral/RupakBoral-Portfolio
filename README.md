@@ -1,12 +1,12 @@
 # Rupak Boral Portfolio Website
 
-This Portfolio has Modern Design and is Responsive for different devices. This includes:
+This Portfolio has Modern Design and is Responsive for different devices. 
 
+This includes:
 1. My Introduction
-2. My Interest
-3. My Skills
-4. My Projects
-5. Contact Me
+2. My Skills
+3. My Projects
+4. Contact Me
 
 📸Screenshot:
 

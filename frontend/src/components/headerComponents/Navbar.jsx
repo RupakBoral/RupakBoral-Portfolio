@@ -16,7 +16,7 @@ const Navbar = () => {
       link: "#skills",
     },
     {
-      label: "Work",
+      label: "Project",
       link: "#work",
     },
   ];

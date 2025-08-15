@@ -12,7 +12,7 @@ const Footer = () => {
       href: "#about",
     },
     {
-      label: "Work",
+      label: "Project",
       href: "#work",
     },
     {

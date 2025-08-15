@@ -24,11 +24,11 @@ const Hero = () => {
         </h1>
         <div className="flex justify-between w-3/4 gap-4 reveal-down">
           <a
-            href="https://drive.google.com/file/d/18YR87dyRhXbotQdYn5qzDZk5dNGC576n/view?usp=sharing"
+            href="https://drive.google.com/file/d/1vLk4YN7frhs5MD4a3SG9BfZqNEQjLWdt/view?usp=sharing"
             target="blank"
           >
             <button className="flex gap-4 p-3 bg-sky-500 text-blue-950 rounded-xl font-medium text-sans">
-              <p>Download Resume</p>
+              <p>Resume</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"

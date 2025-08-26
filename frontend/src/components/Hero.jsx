@@ -12,8 +12,8 @@ const Hero = () => {
         <div className="flex items-center gap-4">
           <img
             src={developer}
-            className="w-12 h-12 rounded-full reveal-up"
-            alt=""
+            className="w-12 h-12 object-cover aspect-square rounded-full reveal-up"
+            alt="developer"
           />
           <p className="text-zinc-400 text-base reveal-down">
             Available for work
@@ -57,9 +57,9 @@ const Hero = () => {
         </div>
       </div>
       <img
-        className="md:w-96 md:h-96 w-60 h-60 hidden sm:inline rounded-full"
+        className="md:w-96 md:h-96 w-60 h-60 aspect-square object-contain hidden sm:inline rounded-full"
         src={dev}
-        alt=""
+        alt="dev"
       />
     </div>
   );

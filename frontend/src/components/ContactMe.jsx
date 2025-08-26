@@ -50,9 +50,9 @@ const ContactMe = () => {
         <p className="text-zinc-400">
           Let's work together! Feel free to reach out for collaborations.
         </p>
-        <hr className="w-4/5 md:border-zinc-600 border" />
+        <hr className="w-4/5 mx-auto md:border-zinc-600 border" />
         <div className="flex justify-between md:mx-0 mx-auto md:w-1/2 gap-4">
-          <a href="https://www.github.com/RupakBoral">
+          <a name="github" href="https://www.github.com/RupakBoral">
             <svg
               className="border border-zinc-400 w-12 h-12 rounded-xl bg-slate-800"
               viewBox="0 0 24 24"
@@ -65,7 +65,10 @@ const ContactMe = () => {
               ></path>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/rupak-boral-169435249/">
+          <a
+            name="linkedin"
+            href="https://www.linkedin.com/in/rupak-boral-169435249/"
+          >
             <svg
               className="border border-zinc-400 w-12 h-12 rounded-xl bg-slate-800"
               viewBox="0 0 24 24"
@@ -80,9 +83,9 @@ const ContactMe = () => {
           </a>
           <a href="https://leetcode.com/u/RupakBoral/">
             <img
-              className="border border-zinc-400 w-12 h-12 rounded-xl bg-slate-800"
+              className="aspect-square border border-zinc-400 w-12 h-12 rounded-xl bg-slate-800"
               src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png"
-              alt=""
+              alt="leetcode"
             />
           </a>
         </div>

@@ -1,17 +1,17 @@
 import ItemsList from "./ItemsList";
 
-const ProjectCard = ({ image, name, stacks, link }) => {
+const ProjectCard = ({ image, name, stacks, link, index }) => {
   return (
     <div className="flex flex-col gap-3 bg-zinc-800 rounded-2xl p-6 hover:shadow-pink-200 transition-all duration-900 hover:shadow-lg ">
       <img
-        className="reveal-down rounded-2xl hover:scale-105 transition-all duration-1000 h-1/2 object-cover w-full"
+        className="reveal-down rounded-2xl hover:scale-105 transition-all duration-1000 h-1/2 object-cover w-full aspect-video"
         src={image}
-        alt=""
+        alt={`project ${index}`}
       />
       <div className="reveal-up flex flex-col gap-4">
         <div className="flex justify-between items-center">
           <h1>{name}</h1>
-          <a target="blank" href={link}>
+          <a target="blank" name={`link ${index}`} href={link}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="bg-red-200 rounded-xl p-2 w-10 h-10"

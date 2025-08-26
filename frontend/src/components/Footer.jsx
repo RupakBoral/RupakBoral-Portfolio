@@ -1,56 +1,20 @@
 import React from "react";
 import FooterLinks from "./FooterLinks";
+import socials from "../utils/socials";
+import sitemap from "../utils/siteMap";
 
 const Footer = () => {
-  const sitemap = [
-    {
-      label: "Home",
-      href: "#home",
-    },
-    {
-      label: "About",
-      href: "#about",
-    },
-    {
-      label: "Project",
-      href: "#work",
-    },
-    {
-      label: "Contact me",
-      href: "#contact",
-    },
-  ];
-
-  const socials = [
-    {
-      label: "GitHub",
-      href: "https://www.github.com/RupakBoral",
-    },
-    {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/rupak-boral-169435249/",
-    },
-    {
-      label: "Leetcode",
-      href: "https://leetcode.com/u/RupakBoral/",
-    },
-    {
-      label: "Email",
-      href: "mailto:boralrupak@gmail.com",
-    },
-  ];
-
   return (
-    <div className="flex flex-col sm:flex-row justify-between mb-28">
+    <div className="flex flex-row justify-between mb-28">
       <div className="reveal-down flex flex-col gap-8 w-1/2">
-        <h1 className="text-zinc-100 text-4xl font-semibold">
+        <h1 className="text-zinc-100 md:text-4xl text-xl font-semibold">
           Let's work together today!
         </h1>
         <a
           href="#contact"
-          className="p-3 bg-sky-600 font-semibold text-lg text-sky-950 w-2/5 rounded-xl box-content"
+          className="p-3 bg-sky-600 font-semibold text-sm md:text-lg w-fit text-sky-950 rounded-xl box-content"
         >
-          Start Project{" "}
+          Start <span className="md:inline hidden">Project</span>
         </a>
       </div>
       <div className="reveal-up flex flex-col gap-4">

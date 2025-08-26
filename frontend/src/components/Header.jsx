@@ -11,7 +11,13 @@ const Header = () => {
         {/* logo */}
         <h1>
           <a href="/">
-            <img width={40} height={40} src={logo} alt="Rupak Boral" />
+            <img
+              className="aspect-square object-contain"
+              width={40}
+              height={40}
+              src={logo}
+              alt="Rupak Boral"
+            />
           </a>
         </h1>
 

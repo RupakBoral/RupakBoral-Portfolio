@@ -11,14 +11,24 @@
     <meta name="description" content="Rupak Boral Portfolio Website" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-    <!--Google Fonts-->
+    <!--Google Fonts: optimize loading-->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <!--Google Fonts-->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      />
+    </noscript>
+    <!--Google Fonts end-->
 
     <!--Material symbols-->
     <link
@@ -28,7 +38,6 @@
     <!--Material symbols-->
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="preload" type=".jpg" href="src/components/images/dev.jpg" />
 
     <title>Rupak Boral - Portfolio</title>
   </head>

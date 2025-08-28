@@ -4,7 +4,7 @@ const ProjectCard = ({ image, name, stacks, link, index }) => {
   return (
     <div className="flex flex-col gap-3 bg-zinc-800 rounded-2xl p-6 hover:shadow-pink-200 transition-all duration-900 hover:shadow-lg ">
       <img
-        className="reveal-down rounded-2xl hover:scale-105 transition-all duration-1000 h-1/2 object-cover w-full aspect-video"
+        className="reveal-down rounded-2xl hover:scale-105 transition-all duration-1000 max-h-1/2 object-cover w-full aspect-video"
         src={image}
         alt={`project ${index}`}
       />

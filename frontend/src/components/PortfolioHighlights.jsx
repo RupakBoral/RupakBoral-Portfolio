@@ -7,7 +7,7 @@ const PortfolioHighlights = () => {
       <p className="reveal-up text-4xl font-semibold text-zinc-200 md:text-left text-center">
         My Portfolio Highlights
       </p>
-      <div className="grid md:grid-cols-2 md:gap-x-6 md:gap-y-10 gap-x-3 gap-y-5">
+      <div className="grid md:grid-cols-2 md:gap-x-6 md:gap-y-10 gap-x-3 gap-y-5 grid-cols-1">
         {projects.map((item, index) => (
           <ProjectCard
             image={item.imgSrc}

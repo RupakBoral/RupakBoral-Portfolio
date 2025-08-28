@@ -14,6 +14,8 @@ const Hero = () => {
             src={developer}
             className="w-12 h-12 object-cover aspect-square rounded-full reveal-up"
             alt="developer"
+            loading="lazy"
+            decoding="async"
           />
           <p className="text-zinc-400 text-base reveal-down">
             Available for work
@@ -60,6 +62,8 @@ const Hero = () => {
         className="md:w-96 md:h-96 w-60 h-60 aspect-square object-contain hidden sm:inline rounded-full"
         src={dev}
         alt="dev"
+        fetchpriority="high"
+        decoding="async"
       />
     </div>
   );

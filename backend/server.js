@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: [process.env.FRONTEND_BASE_URL, process.env.DEPLOYED_URL],
+    origin: [process.env.FRONTEND_BASE_URL],
     credentials: true,
     methods: "GET,POST",
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -16,6 +16,10 @@ app.use(
 const EmailRouter = require("./email");
 
 app.use("/", EmailRouter);
+
+app.get("/", (req, res) => {
+  res.send("Yes, Backend is working, No problem over here.");
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, "0.0.0.0", () =>
